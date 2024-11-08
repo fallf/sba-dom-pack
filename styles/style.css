@@ -1,15 +1,21 @@
-*{
-    background-color: #ADBC9F;
-
+* {
+  background-color: #adbc9f;
 }
-h1{
-    color: #12372A;
-    text-align: center;
+h1 {
+  color: #12372a;
+  text-align: center;
 }
-h2{
-    color: #436850;
-    text-align: center;
+h2 {
+  color: #436850;
+  text-align: center;
 }
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
+}
+.addItemBtn {
+  font-size: 1rem;
+  outline: none;
+  border-radius: 10px;
+  color: #436850;
+  background-color: #fbfada;
 }

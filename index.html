@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pack-Vacay</title>
-    <link rel="stylesheet" href="./styles/style.css">
-   <script defer src="./script/script.js"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
     <h1>YaY VacaY</h1>
- <h2>Things you need for your out of Town Adventure</h2>
-<h3 id class="destination">This is what i will need for the </h3>
-<input type="text" id="commentInput">
-<button id="addItemBtn" >add Item</button>
-<ul id="commentList">
-    <li>Testing Events</li>
-</ul>
 
-</body>
+    <h2>Things you need for your out of Town Adventure</h2>
+    <header></header>
+    <form id="itemList" action="">
+      <input type="text" id="item-Input" />
+      <button id="addItemBtn" class="addItemBtn"><i class="fa-solid fa-circle-plus"></i></i> Add Item</button>
+      <select name="itemNc" id="">
+        <option value="all">The List</option>
+        <option value="pItem">What we have</option>
+        <option value="nItem">What we need</option>
+      </select>
+    </form>
+    <!-- <input type="text" id="commentInput" /> -->
+    <div>
+      <h3 id class="destination">This is what i will need for the</h3>
+      <ul id="commentList">
+        <li>Testing Events</li>
+      </ul>
+    </div>
+  </body>
 </html>
