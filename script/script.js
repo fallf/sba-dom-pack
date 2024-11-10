@@ -1,48 +1,52 @@
 //const vacayplace = prompt("Are you ready to go on Vacation ");
 
 confirm("are you ready to go on vacation?");
-// Caching DOM Elements
-// Caching DOM Elements
-const cList = document.getElementById("commentList");
-const iInput = document.getElementById("item-Input");
-const cBtn = document.getElementById("addItemBtn");
 
-console.log(iInput);
+const itemInput = document.querySelector("#itemInput");
+const additemsBtns = document.querySelector("#addItemBtn");
 
-// cinput.addEventListener('input', (event) => {
-//     console.log(event.target.value);
-// })
+// // Caching DOM Elements
+// // Caching DOM Elements
+// const cList = document.getElementById("itemList");
+// const iInput = document.getElementById("item-Input");
+// const cBtn = document.getElementById("addItemBtn");
 
-// let i = 0;
-// create an event handler - a function that executes in response to the event
-function addComment(evt) {
-  // console.log(evt)
-  console.log(evt.target);
-  // console.log(iInput.value);
-  const newComment = iInput.value;
-  console.log(newComment);
-  // console.log('i can output anything', ++i);
+// console.log(iInput);
 
-  // This wasn't in the instructions, but
-  // we added a guard against empty comments
-  if (newComment.trim() === "") return;
+// // cinput.addEventListener('input', (event) => {
+// //     console.log(event.target.value);
+// // })
 
-  // add the value to the comment list element
-  const newLi = document.createElement("li");
-  newLi.textContent = newComment;
-  cList.appendChild(newLi);
+// // let i = 0;
+// // create an event handler - a function that executes in response to the event
+// function addComment(evt) {
+//   // console.log(evt)
+//   console.log(evt.target);
+//   // console.log(iInput.value);
+//   const newComment = iInput.value;
+//   console.log(newComment);
+//   // console.log('i can output anything', ++i);
 
-  // clear the input element
-  importInput.value = "";
+//   // This wasn't in the instructions, but
+//   // we added a guard against empty comments
+//   if (newComment.trim() === "") return;
 
-  // focus the input element
-  iInput.focus();
+//   // add the value to the comment list element
+//   const newLi = document.createElement("li");
+//   newLi.textContent = newComment;
+//   cList.appendChild(newLi);
 
-  // you can add an event listener
-  // adding this here wouldn't make a lot of sense
-  // but you can see it working
-  cBtn.removeEventListener("click", addComment);
-}
+//   // clear the input element
+//   importInput.value = "";
 
-// the event that we are looking for is the button click
-cBtn.addEventListener("click", addComment);
+//   // focus the input element
+//   iInput.focus();
+
+//   // you can add an event listener
+//   // adding this here wouldn't make a lot of sense
+//   // but you can see it working
+//   cBtn.removeEventListener("click", addComment);
+// }
+
+// // the event that we are looking for is the button click
+// cBtn.addEventListener("click", addComment);
